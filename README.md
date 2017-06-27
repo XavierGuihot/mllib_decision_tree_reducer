@@ -6,7 +6,7 @@
 
 Version: 1.0.0
 
-API Scaladoc: [Reducer](http://xavierguihot.github.io/mllib_decision_tree_reducer/#org.apache.spark.mllib.tree.Reducer)
+API Scaladoc: [Reducer](https://xavierguihot.github.io/mllib_decision_tree_reducer/#org.apache.spark.mllib.tree.Reducer$)
 
 Small facility which reduces naive decision tree models as produced by mllib.
 
@@ -45,7 +45,7 @@ as a true/false classification tree.
 ## Using mllib_decision_tree_reducer:
 
 
-For additional details: API Scaladoc: [Reducer](http://xavierguihot.github.io/mllib_decision_tree_reducer/#org.apache.spark.mllib.tree.Reducer)
+For additional details: API Scaladoc: [Reducer](https://xavierguihot.github.io/mllib_decision_tree_reducer/#org.apache.spark.mllib.tree.Reducer$)
 
 	import org.apache.spark.mllib.tree.Reducer
 	import org.apache.spark.mllib.tree.model.DecisionTreeModel // spark mllib
