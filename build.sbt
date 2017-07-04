@@ -12,6 +12,8 @@ assemblyOutputPath in assembly := file("./" + name.value + "-" + version.value +
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.1" % "test"
 
+libraryDependencies += "com.holdenkarau" %% "spark-testing-base" % "1.6.1_0.6.0" % "test"
+
 libraryDependencies += "org.apache.spark" %% "spark-core" % "1.6.1" % "provided"
 
 libraryDependencies += "org.apache.spark" %% "spark-mllib" % "1.6.1" % "provided"

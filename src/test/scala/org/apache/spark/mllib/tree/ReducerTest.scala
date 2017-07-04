@@ -1,23 +1,16 @@
 package org.apache.spark.mllib.tree
 
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkConf
-
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.regression.LabeledPoint
 import org.apache.spark.mllib.tree.model.DecisionTreeModel
 
 import scala.util.Random
 
-import org.apache.log4j.Logger
-import org.apache.log4j.Level
+import com.holdenkarau.spark.testing.SharedSparkContext
 
 import org.scalatest.FunSuite
 
-class ReducerTest extends FunSuite {
-
-	Logger.getLogger("org").setLevel(Level.OFF)
-	Logger.getLogger("akka").setLevel(Level.OFF)
+class ReducerTest extends FunSuite with SharedSparkContext {
 
 	test("Merge Naive Leafs") {
 
@@ -31,11 +24,7 @@ class ReducerTest extends FunSuite {
 	/** Generates a DecisionTreeModel object */
 	private def buildTestDecisionTreeModel(): DecisionTreeModel = {
 
-		val sparkContext = new SparkContext(
-			new SparkConf().setAppName("Spark").setMaster("local[2]")
-		)
-
-		val labeledPoints = sparkContext.parallelize(
+		val labeledPoints = sc.parallelize(
 			generateDeterministRandomDataPoints()
 		)
 
@@ -47,8 +36,6 @@ class ReducerTest extends FunSuite {
 			maxDepth = 5,
 			maxBins = 10
 		)
-
-		sparkContext.stop()
 
 		assert(decisionTreeModel.toDebugString.trim === StringifiedTrees.INITIAL_TREE)
 
