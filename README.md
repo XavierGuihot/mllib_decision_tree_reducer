@@ -1,4 +1,4 @@
-# Mllib Decision Tree Reducer [![Build Status](https://travis-ci.org/XavierGuihot/mllib_decision_tree_reducer.svg?branch=master)](https://travis-ci.org/XavierGuihot/mllib_decision_tree_reducer) [![Coverage Status](https://coveralls.io/repos/github/xavierguihot/mllib_decision_tree_reducer/badge.svg?branch=master)](https://coveralls.io/github/xavierguihot/mllib_decision_tree_reducer?branch=master)
+# Mllib Decision Tree Reducer [![Build Status](https://travis-ci.org/XavierGuihot/mllib_decision_tree_reducer.svg?branch=master)](https://travis-ci.org/XavierGuihot/mllib_decision_tree_reducer) [![Coverage Status](https://coveralls.io/repos/github/XavierGuihot/mllib_decision_tree_reducer/badge.svg?branch=master)](https://coveralls.io/github/XavierGuihot/mllib_decision_tree_reducer?branch=master)
 
 
 ## Overview
